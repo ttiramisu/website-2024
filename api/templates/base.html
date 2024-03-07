@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}">
+  <!-- STYLESHEET -->
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- META -->
+  <!-- <meta name="description"
+    content="Pw-silkroad. Teamsilkroad aims to allow students to understand more about the silkroad through board games.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="博览五千年，塑造当代贤" />
+  <meta property="og:image" content="https://pw-silkroad.vercel.app/img/logo.webp" />
+  <meta name="google-site-verification" content="VkXtAnFiVm4gLVKvF_hSTQ3uAns9XgolribhY19DAVU" /> -->
+  <!-- META -->
+  <title>大语文教育</title>
+
+  <!-- ANALYTICS-->
+  <!-- <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XYTN5KH7ZV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XYTN5KH7ZV');
+  </script> -->
+  <!-- ANALYTICS-->
+
+<body>
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+          <img src="{{ url_for('static', filename='img/logo.webp') }}" alt="..." width="30" height="30"
+            class="d-inline-block align-text-top">
+          大语文教育
+        </a>
+        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" role="button">
+                关于大语文教育
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('about') }}">关于我们</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    {% block content %}
+
+    {% endblock %}
+  </main>
+  <a class="footer-link" href="{{ url_for('policy') }}">
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(219, 219, 219, 0.2);">
+        Copyright © <span class="year">2024</span> by 大语文教育小组. All rights reserved.
+      </div>
+    </footer>
+  </a>
+
+  <!-- MAIN SCRIPTS -->
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}" async></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}" async></script>
+  <!-- MAIN SCRIPTS -->
+</body>
+
+</html>
