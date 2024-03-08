@@ -2,6 +2,7 @@
   background-color: #f03e3e !important;
   color: #222 !important;
   transform: all 500ms;
+  border-color: transparent;
 }
 
 .btn-main:hover,
