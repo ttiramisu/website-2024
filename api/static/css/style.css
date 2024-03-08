@@ -10,3 +10,8 @@
   background-color: #ff8787 !important;
   border-color: transparent;
 }
+
+.col-xl-20 {
+  flex: 0 0 auto;
+  width: 20%
+}
