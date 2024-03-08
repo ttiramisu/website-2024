@@ -1,0 +1,10 @@
+.btn-main {
+  background-color: #f03e3e !important;
+  color: #222 !important;
+  transform: all 500ms;
+}
+
+.btn-main:hover,
+.btn-main:active {
+  background-color: #ff8787 !important;
+}
