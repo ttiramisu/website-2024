@@ -8,4 +8,5 @@
 .btn-main:hover,
 .btn-main:active {
   background-color: #ff8787 !important;
+  border-color: transparent;
 }
