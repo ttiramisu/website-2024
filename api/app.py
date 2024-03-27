@@ -11,6 +11,10 @@ app = Flask(__name__, static_folder='static', static_url_path='')
 def index():
     return render_template('index.html')
 
+@app.route('/about-dayuwen')
+def aboutDayuwen():
+    return render_template('dayuwen/about.html')
+
 @app.route('/about-us')
 def about():
     return render_template('about.html')
