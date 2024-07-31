@@ -16,7 +16,7 @@ def aboutDayuwen():
     return render_template('dayuwen/about.html')
 
 @app.route('/about-policy')
-def aboutDayuwen():
+def aboutPolicy():
     return render_template('dayuwen/policy.html')
 
 @app.route('/about-us')
