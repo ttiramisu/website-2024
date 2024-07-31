@@ -15,6 +15,10 @@ def index():
 def aboutDayuwen():
     return render_template('dayuwen/about.html')
 
+@app.route('/about-policy')
+def aboutDayuwen():
+    return render_template('dayuwen/policy.html')
+
 @app.route('/about-us')
 def about():
     return render_template('about.html')
